@@ -1,0 +1,24 @@
+#Import all the required libraries. Transformers, pytorch, fugashi, and ipadic should already be installed.
+from transformers import BertJapaneseTokenizer, BertForMultipleChoice
+import torch
+import pandas as pd
+#Load in the test text (divided into pre_text, target_adverb, and post_text
+# columns) and list of adverbs for random alternate answer generation using Pandas.
+text_data = pd.read_csv ('/home/admin/Desktop/natural_language_text.csv')
+natural_language_text = pd.DataFrame(text_data, columns= ['pre_text', 'target_adverb', 'post_text', 'logits', 'loss'])
+#Need to deal with excluding variants later.
+adverb_list = pd.read_csv ('/home/admin/Desktop/adverb_list.csv')
+tokenizer = BertJapaneseTokenizer.from_pretrained('cl-tohoku/bert-base-japanese-whole-word-masking')
+model = BertForMultipleChoice.from_pretrained('cl-tohoku/bert-base-japanese-whole-word-masking')
+for i in range(0, len(natural_language_text)):
+    prompt = str(natural_language_text.pre_text[i])
+    choice0 = str(adverb_list.sample() + natural_language_text.post_text[i])
+    choice1 = str(adverb_list.sample() + natural_language_text.post_text[i])
+    choice2 = str(adverb_list.sample() + natural_language_text.post_text[i])
+    choice3 = str(adverb_list.sample() + natural_language_text.post_text[i])
+    labels = torch.tensor(0).unsqueeze(0)
+    encoding = tokenizer([prompt, prompt, prompt, prompt], [choice0, choice1, choice2, choice3], return_tensors='pt', padding=True)
+    outputs = model(**{k: v.unsqueeze(0) for k, v in encoding.items()}, labels=labels)
+    loss = outputs.loss
+    logits = outputs.logits
+    print(logits)
