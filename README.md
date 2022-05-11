@@ -47,11 +47,11 @@ Walkthrough video coming soon.
 
 ## Content
 
-- [ ] JP_BERT Test Script
-- [ ] JP_BERT Test Notebook
+- [ ] gen_ppx_score
+- [ ] gen_ppx_notebook
 - [ ] ppx_descriptive_stats
-- [ ] JPBERT_ppx_output
-- [ ] Statistical Calculations
+- [ ] ppx_output
+- [ ] statistical_calculations
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
