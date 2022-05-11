@@ -34,54 +34,24 @@ We did not fine-tune the Japanese BERT model, which was obtained from a team at 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Since we are not training neural networks in this project, useres should be able to reproduce our results with a modern laptop. As always, I recommend people use Linux. However, Python theoretically works on Windows and MacOS too (though I can never get it to work properly). Alternatively, Colab Notebooks are provided for a more beginner-friendly hand holding experience (that I personally enjoy).
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+Since we are not training neural networks in this project, users should be able to reproduce our results with a modern laptop. As always, I recommend people use Linux. However, Python theoretically works on Windows and MacOS too (though I can never get it to work properly). Alternatively, Colab Notebooks are provided for a more beginner-friendly experience.
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Walkthrough
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Walkthrough video coming soon.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Content
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] JP_BERT Test Script
+- [ ] JP_BERT Test Notebook
+- [ ] Test Dataset
+- [ ] JP_BERT Output
+- [ ] Statistical Calculations
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -112,15 +82,6 @@ Distributed under the GNU Lesser General Public License. See `LICENSE.txt` for m
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
