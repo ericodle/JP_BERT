@@ -8,7 +8,7 @@
 <h3 align="center">JP_BERT</h3>
 
   <p align="center">
-    BERT is a transformer-based language model published in 2019 that has recently gained attention for its high Natural Language Processing (NLP) benchmark scores. This repository serves as a source of supplementary material for an NLP conference paper on Japanese-trained BERT (JP_BERT) currently under review. We herein archive our training data, Python scripts, raw BERT output, and statistical calculations for the reference of anyone interested.
+    [BERT](https://github.com/google-research/bert) is a transformer-based language model published in 2019 that has recently gained attention for its high Natural Language Processing (NLP) benchmark scores. This repository serves as a source of supplementary material for an NLP conference paper on Japanese-trained BERT (JP_BERT) currently under review. We herein archive our training data, Python scripts, raw BERT output, and statistical calculations for the reference of anyone interested.
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -24,7 +24,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About this Project
 
-JP_BERT came about when my former linguistics advisor and I ambitiously decided to try using artifical neural networks (ANNs) in response to an engineering challenge posed by a professor in the CS department. Though clueless at first, we eventually figured out enough PyTorch and linear alegbra to sound like we knew what we were talking about. Once things began working, we were shocked to see how accurate BERT was on answering grammar questions it had never seen before. This is particularly true of Japanese adverb questions, which are notoriously context-dependent, subjective, and a constant source of pain in the L2 Japanese classroom. On this point, we speak from experience both as students and teacher of the Japanese language. Nonetheless, we found that JP_BERT trained on a large corpus of Japanese text was able to answer adverb grammar questions with a high degree of accuracy. We hope JP_BERT inspires you to contribute to our project, incorporate our tools, and play around with ANN language models yourself! 
+JP_BERT came about when my former linguistics advisor and I ambitiously decided to try using artifical neural networks (ANNs) in response to an engineering challenge posed by a professor in the CS department. Though clueless at first, we eventually figured out enough PyTorch and linear alegbra to sound like we knew what we were talking about. Once things began working, we were shocked to see how accurate BERT was on answering grammar questions it had never seen before. This is particularly true of Japanese adverb questions, which are notoriously context-dependent, subjective, and a constant source of pain in the L2 Japanese classroom. On this point, we speak from experience both as students and teacher of the Japanese language. 
+
+We did not fine-tune the Japanese BERT model, which was obtained from a team at [Tohoku University](https://github.com/cl-tohoku/bert-japanese/tree/v1.0). Fine-tuning is best performed on computers with an expensive GPU, which we did not have access to at the time. Google Colab notebooks do offer hardware acceleration for ANN training/fine-tuning on a first-come-first-serve basis (of course you can pay a monthly fee for better access). However, found the question "what can a model trained on general text do?" to be more interesting. Nonetheless, we found that JP_BERT trained on a large corpus of Japanese text was able to answer adverb grammar questions with a high degree of accuracy. We hope JP_BERT inspires you to contribute to our project, incorporate our tools, and play around with ANN language models yourself! 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -32,7 +34,7 @@ JP_BERT came about when my former linguistics advisor and I ambitiously decided 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Add content here.
+Since we are not training neural networks in this project, useres should be able to reproduce our results with a modern laptop. As always, I recommend people use Linux. However, Python theoretically works on Windows and MacOS too (though I can never get it to work properly). Alternatively, Colab Notebooks are provided for a more beginner-friendly hand holding experience (that I personally enjoy).
 
 ### Prerequisites
 
