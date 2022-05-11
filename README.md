@@ -8,7 +8,7 @@
 <h3 align="center">JP_BERT</h3>
 
   <p align="center">
-    My colleagues and I aim to provide a transparent set of free-to-use tools for zebrafish behavior analysis. Similar commercially available software suites are restrictive, secretive, outdated, and unreasonably priced for the features offered. 
+    BERT is a transformer-based language model published in 2019 that has recently gained attention for its high Natural Language Processing (NLP) benchmark scores. This repository serves as a source of supplementary material for an NLP conference paper on Japanese-trained BERT (JP_BERT) currently under review. We herein archive our training data, Python scripts, raw BERT output, and statistical calculations for the reference of anyone interested.
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -24,9 +24,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About this Project
 
-Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I found conventional behavioral analysis tools lacking. To address this issue, I began writing simple scripts that interpret raw XY-coordinate output from excellent, open-source animal tracking projects such as [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai) and [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut). As my labmates and I learned more about Python programming, our modules became more ambitious. Though still in its infancy, we hope OpenDanio inspires you to contribute to our project, incorporate our tools, and take full control of your own data processing workflow! 
+JP_BERT came about when my former linguistics advisor and I ambitiously decided to try using artifical neural networks (ANNs) in response to an engineering challenge posed by a professor in the CS department. Though clueless at first, we eventually figured out enough PyTorch and linear alegbra to sound like we knew what we were talking about. Once things began working, we were shocked to see how accurate BERT was on answering grammar questions it had never seen before. This is particularly true of Japanese adverb questions, which are notoriously context-dependent, subjective, and a constant source of pain in the L2 Japanese classroom. On this point, we speak from experience both as students and teacher of the Japanese language. Nonetheless, we found that JP_BERT trained on a large corpus of Japanese text was able to answer adverb grammar questions with a high degree of accuracy. We hope JP_BERT inspires you to contribute to our project, incorporate our tools, and play around with ANN language models yourself! 
 
-It's your data. You should decide what the computer does with it.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
