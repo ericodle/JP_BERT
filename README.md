@@ -8,7 +8,8 @@
 <h3 align="center">JP_BERT</h3>
 
   <p align="center">
-    [BERT](https://github.com/google-research/bert) is a transformer-based language model published in 2019 that has recently gained attention for its high Natural Language Processing (NLP) benchmark scores. This repository serves as a source of supplementary material for an NLP conference paper on Japanese-trained BERT (JP_BERT) currently under review. We herein archive our training data, Python scripts, raw BERT output, and statistical calculations for the reference of anyone interested.
+
+    [BERT](https://github.com/google-research/bert) [Tohoku University](https://github.com/google-research/bert) is a transformer-based language model published in 2019 that has recently gained attention for its high Natural Language Processing (NLP) benchmark scores. This repository serves as a source of supplementary material for an NLP conference paper on Japanese-trained BERT (JP_BERT) currently under review. We herein archive our training data, Python scripts, raw BERT output, and statistical calculations for the reference of anyone interested.
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
