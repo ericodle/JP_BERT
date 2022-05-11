@@ -49,8 +49,8 @@ Walkthrough video coming soon.
 
 - [ ] JP_BERT Test Script
 - [ ] JP_BERT Test Notebook
-- [ ] Test Dataset
-- [ ] JP_BERT Output
+- [ ] ppx_descriptive_stats
+- [ ] JPBERT_ppx_output
 - [ ] Statistical Calculations
 
 <p align="right">(<a href="#top">back to top</a>)</p>
