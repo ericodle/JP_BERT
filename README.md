@@ -87,6 +87,7 @@ MeCab will then do its job and segment the text we provided. Additionally, MeCab
 私 | ワタシ | 私 | 名詞代名詞般 
 は | ハ | は | 助詞係助詞 
 機械 | キカイ | 機械 | 名詞般 
+
 学習 | ガクシュウ | 学習 | 名詞サ変接続 
 が | ガ | が | 助詞格助詞般 
 好き | スキ | 好き | 名詞形容動詞語幹 
