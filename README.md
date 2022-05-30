@@ -137,7 +137,7 @@ This CSV file contains the same first two columns as "ppx_output.csv" plus addit
 
 This CSV file contains two data columns. The first column is titled "text" and consists of 100 transcribed N3 Japanese adverb questions from a comercially available JLPT test prep book. Each of the 4 possible answers for each question are written out such that JP_BERT can evaluate sentence perplexities in their entirety. Each 4-sentence question set is separated by a blank row, producing a list 500 rows in length. The second column is titled "perplexity" and contains perplexity values corresponding to adjacent text inputs.
 
-- [ ] statistical_calculations
+- [ ] BERT_primer.py
 
 coming soon!
 
