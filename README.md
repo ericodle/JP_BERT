@@ -112,7 +112,7 @@ You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for diff
 
 ## Content
 
-- [ ] gen_ppx_score
+- [ ] generate_ppx.py
 
 coming soon!
 
