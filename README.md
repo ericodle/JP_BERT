@@ -84,15 +84,14 @@ If everything went well, we should be able to perform the following test.
   ```
 MeCab will then do its job and segment the text we provided. Additionally, MeCab identifies each segment into its katakana pronounciation and grammatical class. Handy!
 
-| 私    |  ワタシ |  私 |  名詞-代名詞-一般 | ---|
-|----------------------------------------------------------------|---|---|---|
-| は     |  ハ |  は |  助詞-係助詞 |   |
-| 機械      キカイ     機械      名詞-一般                       |   |   |   |   
-| 学習      ガクシュウ   学習      名詞-サ変接続                 |   |   |   |   
-| が       ガ       が       助詞-格助詞-一般                    |   |   |   |   
-| 好き      スキ      好き      名詞-形容動詞語幹                |   |   |   |   
-| です      デス      です      助動詞     特殊・デス   基本形   |   |   |   |   
-| 。       。       。       記号-句点                           |   |   |   |   
+| 私       ワタシ     私       名詞-代名詞-一般                  |   |   |   |   |
+| は       ハ       は       助詞-係助詞                         |   |   |   |   |
+| 機械      キカイ     機械      名詞-一般                       |   |   |   |   |
+| 学習      ガクシュウ   学習      名詞-サ変接続                 |   |   |   |   |
+| が       ガ       が       助詞-格助詞-一般                    |   |   |   |   |
+| 好き      スキ      好き      名詞-形容動詞語幹                |   |   |   |   |
+| です      デス      です      助動詞     特殊・デス   基本形   |   |   |   |   |
+| 。       。       。       記号-句点                           |   |   |   |   |
 
 You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
 
