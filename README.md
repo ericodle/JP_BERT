@@ -97,15 +97,16 @@ MeCab will then do its job and segment the text we provided. Additionally, MeCab
 
 You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
 
-### gen_ppx
+### generate_ppx.py
 
-> text here
+> This is the main project script. Open the .py file for helpful tips and enlightening comments. More importantly, our proposed perplexity model is coded as a FOR loop in this script.
 
 ```sh
-# This script will do something.
-./gen_ppx.py
-```
+# This will generate a ppx value for each N3 adverb question response. 
+# The questions are taken from N3_adverbs.csv under the "text" column.
 
+./generate_ppx.py
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -114,7 +115,7 @@ You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for diff
 
 - [ ] generate_ppx.py
 
-coming soon!
+This is the central script of the entire JP_BERT project. Here, we have coded our proposed perplexity algorithm as a simple FOR loop with accompanying comments in the .py file. For further reference, please check out our soon-to-be-published paper on the topic.
 
 - [ ] ppx_descriptive_stats.csv
 
@@ -126,7 +127,7 @@ This CSV file contains two data columns. The first column is titled "text" and c
 
 - [ ] BERT_primer.py
 
-coming soon!
+We have provided a beginner's guide for using BERT in Japanese (or any language). Feel free to open up this .py file in your favorite IDE or text editor and read all the helpful comments. You can copy-paste the code one block at a time in a command line interface, or even run it in a Colab/Jupyter Notebook. No GPU required! We hope this primer serves as an easy-to-understand overview of how BERT does math of words.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
