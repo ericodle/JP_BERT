@@ -20,6 +20,7 @@ def run_bert(sentence):
 This FOR loop is the key component of our entire study.
 Here we define the masking algorithm that calculates perplexity.
 """
+
     for i, word in enumerate(tokenize_input):
         # The input [MASK] is recognized by BERT as a masking token.
         tokenize_input[i] = '[MASK]'
@@ -35,7 +36,7 @@ Here we define the masking algorithm that calculates perplexity.
     ppl = np.exp(-sentence_loss/sen_len)
     return ppl
 
-sentences_file = pd.read_csv ('/home/eo/Desktop/sentences.csv')
+sentences_file = pd.read_csv ('./N3_adverbs.csv')
 sentences = pd.DataFrame(sentences_file, columns=['text', 'perplexity'])
 
 output=[]
