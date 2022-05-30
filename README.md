@@ -38,7 +38,7 @@ Since we are not training neural networks in this project, users should be able 
 
 Download this repository by going up to the green "Code" button at the top right and clicking "Download ZIP".
 
-Alternatively, you can also clone the repo directly using the following command.
+Alternatively, you can also clone the repo directly using the following commands.
 
   ```sh
   # Replace "your_folderpath_here" with the actual folder where you want the project to go.
@@ -53,50 +53,28 @@ Alternatively, you can also clone the repo directly using the following command.
   ```sh
   # Install dependencies if necessary. 
   # You may want to work in a virtual environemnt. Conda environments are nice for that.
-  pip install librosa
+  pip install transformers
   pip install torch torchvision
   ```
 
-### Download GTZAN and extract MFCCs
+### Download xxx
 
-> The training/testing music used in this project comes from the GTZAN music genre dataset, which can be downloaded [here](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/download) from Kaggle. 
-> You will need to enter some account login details per Kaggle's requirements before the download can begin. 
-> Then, you must manually relocate the full dataset (parent folder containing 10 genre sub-folders, each with 100 music clips) into the "GTZAN_dataset" project folder.
+> text here
 
 ```sh
-# This script will extract MFCC's from each song clip.
+# This script will do something.
 ./MFCC_extraction.py
 ```
-> Note that the resulting JSON file is saved in the "MFCCs" folder as a JSON file about 640 MB in size.
 
 
-### Train a model from scratch
+### section 2
 
-Run the following script to set up a new experiment with default settings.
-You will need to specify the type of neural network you want to use.
-After the training process is complete, a train/validation curve will be saved in the project root directory.
-The final model state will also be saved for the next phase: testing. 
 
-   ```sh
-   # Set up a new training run
-   ./train_model.py
-   ```
-Note #1: Training requires a GPU to complete in a timely manner. You can either use your own hardware, or work on a Colab environment.
-If you use a GPU, make sure you have cuda and all related dependencies set up in your environment.
+```sh
+# This script will do something.
+./MFCC_extraction.py
+```
 
-Note #2: Training is as much an art as it is a science, and often involves playing around with different hyperparameters. Users are encouraged to go into the train_model.py script and change the optimizer, learning rate, epochs, or other parameters. The default settings represent what worked best for us at the time of experimentation.
-
-### Testing a trained model
-
-You now have a model trained from scratch on MFCCs extracted from the GTZAN music genre dataset. Nice! It is time to see how well it can classify musical genre.
-In our conference paper, we used a shuffled 80:10:10 split for training, train phase validation, and testing. Therefore, the music clip segments reserved for testing come from same dataset, but have never been seen by the trained model before. Given the scope of the GTZAN dataset, your trained model is unlikely to distinguish Bunun polyphonic chant music from Ainu rimse dance music. A neural network is only as good as the data on which it is trained. Within the GTZAN training data, how well can your model classify musical genre?
-
-  ```sh
-  # Test a pre-trained model.
-  ./test_model.py
-  ```
-
-Note: The entire MFCC extract JSON file is re-shuffled and split into 80:10:10 train/validation/test subsets each time the train_model.py and test_model.py  scripts are run. Therefore, each train and test run may yield slightly different results. In our experience working on this project, the only factors signifcantly affecting performance were neural network architecture and training hyperparameters.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
