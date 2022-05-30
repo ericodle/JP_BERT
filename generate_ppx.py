@@ -9,15 +9,19 @@ from transformers import AutoTokenizer, AutoModelForMaskedLM
 def run_bert(sentence):
     with torch.no_grad():
         model = AutoModelForMaskedLM.from_pretrained("cl-tohoku/bert-large-japanese")
-        # Load pre-trained model tokenizer (vocabulary)
+        
+        # Load pre-trained model tokenizer
         tokenizer = AutoTokenizer.from_pretrained("cl-tohoku/bert-large-japanese")
         tokenize_input = tokenizer.tokenize(sentence)
         tensor_input = torch.tensor([tokenizer.convert_tokens_to_ids(tokenize_input)])
         sen_len = len(tokenize_input)
         sentence_loss = 0.
-
+"""
+This FOR loop is the key component of our entire study.
+Here we define the masking algorithm that calculates perplexity.
+"""
     for i, word in enumerate(tokenize_input):
-        # add mask to i-th character of the sentence
+        # The input [MASK] is recognized by BERT as a masking token.
         tokenize_input[i] = '[MASK]'
         mask_input = torch.tensor([tokenizer.convert_tokens_to_ids(tokenize_input)])
         output = model(mask_input)
@@ -27,6 +31,7 @@ def run_bert(sentence):
         word_loss = ps[tensor_input[0, i]]
         sentence_loss += word_loss.item()
         tokenize_input[i] = word
+    # Perplexity (ppl) is defined as the exponential of the negative ratio of sentence loss to sentence length.
     ppl = np.exp(-sentence_loss/sen_len)
     return ppl
 
