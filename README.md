@@ -84,14 +84,13 @@ If everything went well, we should be able to perform the following test.
   ```
 MeCab will then do its job and segment the text we provided. Additionally, MeCab identifies each segment into its katakana pronounciation and grammatical class. Handy!
 
-私 | ワタシ | 私 | 名詞代名詞般 
-は | ハ | は | 助詞係助詞 
+私 | ワタシ | 私 | 名詞 
+は | ハ | は | 助詞 
 機械 | キカイ | 機械 | 名詞般 
-
-学習 | ガクシュウ | 学習 | 名詞サ変接続 
-が | ガ | が | 助詞格助詞般 
-好き | スキ | 好き | 名詞形容動詞語幹 
-です | デス | です | 助動詞特殊デス基本形 
+学習 | ガクシュウ | 学習 | 名詞
+が | ガ | が | 助詞 
+好き | スキ | 好き | 名詞
+です | デス | です | 助動詞 
 
 
 You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
