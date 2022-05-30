@@ -97,22 +97,13 @@ MeCab will then do its job and segment the text we provided. Additionally, MeCab
 
 You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
 
-### Download xxx
+### gen_ppx
 
 > text here
 
 ```sh
 # This script will do something.
-./MFCC_extraction.py
-```
-
-
-### section 2
-
-
-```sh
-# This script will do something.
-./MFCC_extraction.py
+./gen_ppx.py
 ```
 
 
@@ -122,10 +113,6 @@ You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for diff
 ## Content
 
 - [ ] gen_ppx_score
-
-coming soon!
-
-- [ ] gen_ppx_notebook
 
 coming soon!
 
@@ -142,7 +129,6 @@ This CSV file contains two data columns. The first column is titled "text" and c
 coming soon!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
