@@ -84,8 +84,13 @@ If everything went well, we should be able to perform the following test.
   ```
 MeCab will then do its job and segment the text we provided. Additionally, MeCab identifies each segment into its katakana pronounciation and grammatical class. Handy!
 
-Markdown | Less | Pretty
---- | --- | ---
+Markdown | Less | Pretty | Less 
+--- | --- | --- | --- 
+--- | --- | --- | --- 
+--- | --- | --- | --- 
+--- | --- | --- | --- 
+--- | --- | --- | --- 
+--- | --- | --- | --- 
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
