@@ -53,9 +53,46 @@ Alternatively, you can also clone the repo directly using the following commands
   ```sh
   # Install dependencies if necessary. 
   # You may want to work in a virtual environemnt. Conda environments are nice for that.
-  pip install transformers
+  pip install transformers==3.0.2
   pip install torch torchvision
+  pip install git
   ```
+  
+### Get MeCab and IPADIC working
+
+The pre-trained BERT model used for this project employs the MeCab text segmenter for Japanese. Along with MeCab comes the IPADic tokenization dictionary, which must also be installed. The following code got everything working in our environment, but be prepared to do the incompatible dependency/missing package dance a bit before everything works.
+
+  ```sh
+  # First, install MeCab.
+  apt install aptitude swig 
+  aptitude install mecab libmecab-dev mecab-ipadic-utf8 git make curl xz-utils file -y
+  pip install mecab-python3==0.996.6rc2
+  
+  # Next, install the Neologd ipadic dictionary---it contains more modern internet words.
+  git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
+  echo yes | mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -a
+  ```
+
+If everything went well, we should be able to perform the following test.
+
+  ```python
+  import MeCab
+  m=MeCab.Tagger("-Ochasen")
+  text = "私は機械学習が好きです。"
+  text_segmented = m.parse(text)
+  print(text_segmented)
+  ```
+MeCab will then do its job and segment the text we provided. Additionally, MeCab identifies each segment into its katakana pronounciation and grammatical class. Handy!
+
+私     ワタシ	      私	    名詞-代名詞-一般		
+は	    ハ	         は	    助詞-係助詞		
+機械	  キカイ	     機械	   名詞-一般		
+学習	  ガクシュウ	  学習	  名詞-サ変接続		
+が	    ガ	         が	    助詞-格助詞-一般		
+好き	  スキ	      好き	  名詞-形容動詞語幹		
+です	  デス	      です	  助動詞	特殊・デス	基本形
+
+You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
 
 ### Download xxx
 
