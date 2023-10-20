@@ -19,18 +19,45 @@
   </p>
 </div>
 
+## Overview
+
+Computer language models now perform comparably to humans on multiple NLP tasks, suggesting artificial intelligence (AI) is ready for the classroom. To further the adoption of AI as a learning tool, we herein evaluate a Japanese BERT language model (JPBERT) on an adverb test using a custom perplexity (PPX) output layer. Comparing raw PPX score, inter-question perplexity range (IQPR), and difference between the first and second lowest perplexity scores (2-1DIFF), we found that 2-1DIFF and IQPR significantly predicted correct JPBERT responses on an N3-level Japanese adverb test. Moreover, JPBERT was able to outperform human university students studying Japanese as a second language (72\% vs. 42.7\% accuracy). Our proposed perplexity model is a useful tool for language educators, particularly as an automated test screening method that objectively evaluates the difficulty of an exam.
 
 
 <!-- ABOUT THE PROJECT -->
-## About this Project
+## Background: Computers in Language Learning
 
-JP_BERT came about when my former linguistics advisor and I ambitiously decided to try using artifical neural networks (ANNs) in response to an engineering challenge posed by a professor in the CS department. Though clueless at first, we eventually figured out enough PyTorch and linear alegbra to sound like we knew what we were talking about. Once things began working, we were shocked to see how accurate BERT was on answering grammar questions it had never seen before. This is particularly true of Japanese adverb questions, which are notoriously context-dependent, subjective, and a constant source of pain in the L2 Japanese classroom. On this point, we speak from experience both as students and teacher of the Japanese language. 
+In the field of second language (L2) education, the application of technology has been a research focus for over a century. In 1918, published an article on the use of phonographs in language classrooms. Some recommended practices cited in the article, including providing students with a written version of the audio to follow along with, are still used in classrooms today. With the prevalence of video recording, researchers began finding ways to incorporate video playback into the L2 education classroom.
 
-We did not fine-tune the Japanese BERT model, which was obtained from a team at [Tohoku University](https://github.com/cl-tohoku/bert-japanese/tree/v1.0). Fine-tuning is best performed on computers with an expensive GPU, which we did not have access to at the time. Google Colab notebooks do offer hardware acceleration for ANN training/fine-tuning on a first-come-first-serve basis (of course you can pay a monthly fee for better access). However, we found the question "what can a model trained on general text do?" to be more interesting. Nonetheless, we found that JP_BERT trained on a large corpus of Japanese text was able to answer adverb grammar questions with a high degree of accuracy. We hope JP_BERT inspires you to contribute to our project, incorporate our tools, and play around with ANN language models yourself! 
+Modern work on the application of computers in the L2 education classroom often fall under the banner of Computer Assisted Language Learning, or CALL. Within this field exists the subtopic of ICALL (Intelligent CALL) that aims to use artificial intelligence as a means of providing linguistic feedback to students \cite{amaral2008recording}. Such tools include E-Tutor for students of German \cite{heift2010developing}, ICICLE for American Sign Language learners \cite{michaud2006capturing}, and CASTLE for grammar correction through text-based role playing \cite{murphy1997learner}. From the author's recent experience, the popularization of digital voice recorders, touch-screen 電子黒板 (denshi kokuban; electronic blackboards), 電子辞書 (denshi jisho; electronic dictionaries), and now, smartphone apps such as Duolingo and Kahoot! demonstrate the persistence of CALL in the L2 classroom．In the spirit of exploring intelligent computer systems to aid language learning, we herein focus on recent developments in multi-layered, or \textit{deep}, neural network language models and the L2 education classroom application potential they hold.
 
+The recent availability of increasingly powerful artificial neural network models such as BERT (bidirectional encoder representations from transformers)\cite{devlin2018} and GPT (generative pre-trained transformer) \cite{radford2018improving} led us to explore how well such models can learn the Japanese language. As teachers and learners of the language, we note the particular difficulty Japanese adverbs cause students. Thus, this study focuses on a pre-trained BERT model (JPBERT) in accurately answering multiple-choice Japanese adverb questions similar to those often faced by the L2 Japanese learner.
+
+## Perplexity
+
+Computer language models now perform comparably to humans on multiple NLP tasks, suggesting artificial intelligence (AI) is ready for the classroom. To further the adoption of AI as a learning tool, we herein evaluate a Japanese BERT language model (JPBERT) on an adverb test using a custom perplexity (PPX) output layer. Comparing raw PPX score, inter-question perplexity range (IQPR), and difference between the first and second lowest perplexity scores (2-1DIFF), we found that 2-1DIFF and IQPR significantly predicted correct JPBERT responses on an N3-level Japanese adverb test. Moreover, JPBERT was able to outperform human university students studying Japanese as a second language (72\% vs. 42.7\% accuracy). Our proposed perplexity model is a useful tool for language educators, particularly as an automated test screening method that objectively evaluates the difficulty of an exam.
+
+\begin{equation}
+Perplexity = \exp\frac{-\sum_{i=0}^{n} \sigma_(\mathbf{x})_i}{n}
+\end{equation}
+
+wherein the softmax function, $\sigma$, is defined as:
+
+\begin{equation}
+\sigma(\mathbf{z})_j = \frac{\exp(\mathbf{z}_j)}{\sum_{k=1}^{n}\exp(\mathbf{z}_k)}
+\end{equation}
+
+Equation 4 above defines our proposed perplexity measure. $\sigma{(x)}_i$ represents loss due to masking token i on output vector \textbf{x}, while n represents the total number of tokens in the input text. Equation 5 describes the softmax function, $\sigma$. For each element j in an output vector \textbf{z}, softmax calculates the mean of exponential values for $\textbf{z}_j$ for every element in \textbf{z} from k=1 to n.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Testing Results
+
+JPBERT correctly answered 72 of the 100 questions (72\%) in the N3 set. Assuming the null hypothesis that JPBERT would correctly answer 25\% of the questions by random chance, Mann-Whitney U testing found JPBERT to score significantly higher (U=2650; P$<$0.00001) than chance. To evaluate the utility of Perplexity in predicting adverb test accuracy, we performed significance testing using the Mann-Whitney U test. JPBERT accuracy (correct vs. incorrect answer groups) on the 100-response N3 adverb question set was significantly different with respect to 2-1DIFF (U=493; P=0.00004) and IQPR (U=625; P=0.00164), but not raw Perplexity output alone (PPX; U=888; P=0.17879). 
+
+*Figure
+
+Histograms showing the roughly normal distributions of input question lengths, generated perplexity (PPX) scores, and the derived measures 2-1DIFF and IQPR. All distributions were roughly normal, and non-representative outliers were omitted from the X-axis range.
 
 ## Getting Started
 
@@ -131,6 +158,12 @@ We have provided a beginner's guide for using BERT in Japanese (or any language)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+## Concluding Thoughts
+
+One barrier to wide-spread adoption is the technical knowledge required to set up and implement a neural network language model. Not only do we ask language teacher to be functionally proficient in computer programming, but also to possess sufficient knowledge as to implement and interpret (as well as troubleshoot) our perplexity approach. This barrier to entry was recently addressed by the free-to-use and beginner-friendly tool ChatGPT, which has garnered recent attention as a general-purpose AI language model and which is already the subject of research for its academic applications \cite{aydin2022openai, susnjak2022chatgpt, gilson2022well}. Still, ChatGPT and other such tools are unlikely to remain free once users have become sufficiently reliant on their services. 
+
+Another concern of AI in the classroom is student data privacy, the threats to which remain unclear \cite{korir2023investigating}. To facilitate free and easy access to JPBERT, perplexity, and all future tools we develop, we provide our code, source data, and example workbooks on GitHub (\url{https://github.com/ericodle/JP_BERT}) in the hopes that language teachers otherwise intimidated by this or other CALL tools feel encouraged to explore AI in the classroom.
 
 <!-- CONTRIBUTING -->
 ## Contributing
