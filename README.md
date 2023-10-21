@@ -42,7 +42,7 @@ $$Perplexity = e^{\frac {-\sum\sigma(X_i)}{n}} $$
 $$\sigma (Z_j) = \frac{e^{Z_j}}{\sum e^{Z_k}} $$
 
 The above equations defines our proposed perplexity measure. $\sigma(X_i)$ represents loss due to masking 
-token i on output vector x, while n represents the total number of tokens in the input text.
+token i on output vector X, while n represents the total number of tokens in the input text.
 For each element j in an output vector Z, softmax calculates the mean of exponential values for $Z_j$ for every element in Z from k=1 to n.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
