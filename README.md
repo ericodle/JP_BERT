@@ -2,7 +2,6 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://github.com/ericodle/JP_BERT/blob/main/JPBERT_workflow.jpg" alt="Logo" width="400" height="700">
   </a>
 
 <h3 align="center">JP_BERT</h3>
@@ -20,6 +19,7 @@
 </div>
 
 ## Overview
+<img src="https://github.com/ericodle/JP_BERT/blob/main/JPBERT_workflow.jpg" alt="Logo" width="400" height="700">
 
 Computer language models now perform comparably to humans on multiple NLP tasks, suggesting artificial intelligence (AI) is ready for the classroom. To further the adoption of AI as a learning tool, we herein evaluate a Japanese BERT language model (JPBERT) on an adverb test using a custom perplexity (PPX) output layer. Comparing raw PPX score, inter-question perplexity range (IQPR), and difference between the first and second lowest perplexity scores (2-1DIFF), we found that 2-1DIFF and IQPR significantly predicted correct JPBERT responses on an N3-level Japanese adverb test. Moreover, JPBERT was able to outperform human university students studying Japanese as a second language (72\% vs. 42.7\% accuracy). Our proposed perplexity model is a useful tool for language educators, particularly as an automated test screening method that objectively evaluates the difficulty of an exam.
 
