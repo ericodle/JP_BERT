@@ -39,7 +39,7 @@ $$Perplexity = e^{\frac {-\sum\sigma X_i}{n}} $$
  wherein the softmax function $\sigma$ is defined as
 
 **Softmax:**
-$$\sigma Z_j = \frac{e^Z_j}{\sum e^Z_k} $$
+$$\sigma Z_j = \frac{e^{Z_j}}{\sum e^{Z_k}} $$
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
