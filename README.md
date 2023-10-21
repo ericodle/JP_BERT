@@ -36,7 +36,7 @@ Computer language models now perform comparably to humans on multiple NLP tasks,
 **Perplexity**
 $$\Perplexity \eq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
- wherein the softmax function $$\sigma$$ is defined as
+ wherein the softmax function \sigma is defined as
 
 **Softmax**
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
