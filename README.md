@@ -34,7 +34,7 @@ Modern work on the application of computers in the L2 education classroom often 
 Computer language models now perform comparably to humans on multiple NLP tasks, suggesting artificial intelligence is ready for the classroom. To further the adoption of AI as a learning tool, we herein evaluate a Japanese BERT language model (JP_BERT) on adverb understanding via a custom perplexity (PPX) output layer. Comparing raw PPX score, inter-question perplexity range (IQPR), and difference between the first and second lowest perplexity scores (2-1DIFF), we found that 2-1DIFF and IQPR significantly predicted correct JPBERT responses on an N3-level Japanese adverb test. Our proposed PPX model is a useful tool for language educators, particularly as an automated test screening method that objectively evaluates the difficulty of an exam.
 
 **Perplexity**
-$$Perplexity = e^{\frac {-\sum_{i=1}^{n} \sigma X_i}{n}} $$
+$$Perplexity = e^{\frac {-\sum^{n} \sigma X_i}{n}} $$
 
  wherein the softmax function $\sigma$ is defined as
 
