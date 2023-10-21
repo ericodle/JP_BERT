@@ -34,12 +34,12 @@ Modern work on the application of computers in the L2 education classroom often 
 Computer language models now perform comparably to humans on multiple NLP tasks, suggesting artificial intelligence is ready for the classroom. To further the adoption of AI as a learning tool, we herein evaluate a Japanese BERT language model (JP_BERT) on adverb understanding via a custom perplexity (PPX) output layer. Comparing raw PPX score, inter-question perplexity range (IQPR), and difference between the first and second lowest perplexity scores (2-1DIFF), we found that 2-1DIFF and IQPR significantly predicted correct JPBERT responses on an N3-level Japanese adverb test. Our proposed PPX model is a useful tool for language educators, particularly as an automated test screening method that objectively evaluates the difficulty of an exam.
 
 **Perplexity**
-$$\Perplexity \eq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+$$Perplexity = \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
  wherein the softmax function $\sigma$ is defined as
 
 **Softmax**
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+$$\sigma X_k = \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 The equations above defines our proposed perplexity measure. $\sigma{(x)}_i$ represents loss due to masking token i on output vector \textbf{x}, while n represents the total number of tokens in the input text. Equation 5 describes the softmax function, $\sigma$. For each element j in an output vector \textbf{z}, softmax calculates the mean of exponential values for $\textbf{z}_j$ for every element in \textbf{z} from k=1 to n.
 
