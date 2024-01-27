@@ -22,7 +22,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-  <img src="https://github.com/ericodle/JP_BERT/blob/main/JPBERT_workflow.jpg" alt="Logo" width="400" height="700">
+  <img src="https://github.com/ericodle/JP_BERT/blob/main/img/JPBERT_workflow.jpg" alt="Logo" width="400" height="700">
   </a>
 <h3 align="center">JP_BERT</h3>
 </div>
@@ -57,7 +57,7 @@ For each element j in an output vector Z, softmax calculates the mean of exponen
 
 JP_BERT correctly answered 72 of 100 multiple-choice adverb questions (72%) correctly. Assuming the null hypothesis that JP_BERT would correctly answer 25% of the questions correctly by chance, Mann-Whitney U testing found the model to score significantly higher (U=2650; P<0.00001) than chance. To evaluate the utility of our PPX layer in predicting adverb test accuracy, we performed significance testing using the Mann-Whitney U test again. JP_BERT accuracy (correct vs. incorrect answer groups) on the 100-response N3 adverb question set was significantly different with respect to 2-1DIFF (U=493; P=0.00004) and IQPR (U=625; P=0.00164), but not raw PPX output (PPX; U=888; P=0.17879). 
 
-<img src="https://github.com/ericodle/JP_BERT/blob/main/testing_results.png" alt="Logo" width="800" height="400">
+<img src="https://github.com/ericodle/JP_BERT/blob/main/img/testing_results.png" alt="Logo" width="800" height="400">
 
 Histograms showing the roughly normal distributions of input question lengths, generated perplexity (PPX) scores, and the derived measures 2-1DIFF and IQPR. All distributions were roughly normal, and non-representative outliers were omitted from the X-axis range.
 
