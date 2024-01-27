@@ -61,43 +61,17 @@ JP_BERT correctly answered 72 of 100 multiple-choice adverb questions (72%) corr
 
 Histograms showing the roughly normal distributions of input question lengths, generated perplexity (PPX) scores, and the derived measures 2-1DIFF and IQPR. All distributions were roughly normal, and non-representative outliers were omitted from the X-axis range.
 
-## Getting Started
-
-Since we are not training neural networks in this project, users should be able to reproduce our results with a laptop.
-
-Download this repository by going up to the green "Code" button at the top right and clicking "Download ZIP".
-
-Alternatively, you can also clone the repo directly using the following commands.
-
-  ```sh
-  # Replace "your_folderpath_here" with the actual folder where you want the project to go.
-  cd /your_folderpath_here
-  git clone git@github.com:ericodle/JP_BERT.git
-  ```
-
-> __For this example, the working directory is the repository root directory.__ 
-
-### Install dependencies using pip
-
-  ```sh
-  # Install dependencies if necessary. 
-  # You may want to work in a virtual environemnt. Conda environments are nice for that.
-  pip install transformers==3.0.2
-  pip install torch torchvision
-  pip install git
-  ```
-  
-### Get MeCab and IPADIC working
+## MeCab and IPADIC setup
 
 The pre-trained BERT model used for this project employs the MeCab text segmenter for Japanese. Along with MeCab comes the IPADic tokenization dictionary, which must also be installed. The following code got everything working in our environment, but be prepared to do the incompatible dependency/missing package dance a bit before everything works.
 
   ```sh
-  # First, install MeCab.
+  # Install MeCab.
   apt install aptitude swig 
   aptitude install mecab libmecab-dev mecab-ipadic-utf8 git make curl xz-utils file -y
-  pip install mecab-python3==0.996.6rc2
+  pip install mecab-python3
   
-  # Next, install the Neologd ipadic dictionary---it contains more modern internet words.
+  # Install the Neologd ipadic dictionary---it contains more modern internet words.
   git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
   echo yes | mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -a
   ```
@@ -166,22 +140,6 @@ We have provided a beginner's guide for using BERT in Japanese (or any language)
 One barrier to wide-spread adoption is the technical knowledge required to set up and implement a neural network language model. Not only do we ask language teacher to be functionally proficient in computer programming, but also to possess sufficient knowledge as to implement and interpret (as well as troubleshoot) our perplexity approach. This barrier to entry was recently addressed by the free-to-use and beginner-friendly tool ChatGPT, which has garnered recent attention as a general-purpose AI language model and which is already the subject of research for its academic applications.
 
 Another concern of AI in the classroom is student data privacy, the threats to which remain unclear. To facilitate free and easy access to JPBERT, perplexity, and all future tools we develop, we provide our code, source data, and example workbooks on GitHub in the hopes that language teachers otherwise intimidated by this or other CALL tools feel encouraged to explore AI in the classroom.
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions make the open source community great. Everyone has a unique combination of skills and experience. Your input is **highly valued**.
-If you have ideas for improvement, please fork the repo and create a pull request. 
-If this is your first pull request, just follow the steps below:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
