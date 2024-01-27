@@ -1,0 +1,195 @@
+annoy @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/annoy-1.17.3-cp310-cp310-linux_x86_64.whl#sha256=067a6c4fff3f588044b9fe14904508f487908e1569c07cd9cc5dc7a960e353e9
+appdirs==1.4.4
+apt-clone==0.2.1
+apturl==0.5.2
+arcp==0.2.1
+argcomplete==1.8.1
+async-timeout==4.0.1
+atomicwrites==1.4.0
+attrs==21.2.0
+backcall==0.2.0
+beautifulsoup4==4.10.0
+beniget==0.4.1
+biopython==1.83
+black==21.10b0
+blinker==1.4
+Brlapi==0.8.3
+Brotli==1.0.9
+CacheControl==0.12.10
+certifi==2020.6.20
+chardet==4.0.0
+click==8.0.3
+colorama==0.4.4
+coloredlogs==7.3
+command-not-found==0.3
+configobj==5.0.6
+crudini==0.9.3
+cryptography==3.4.8
+cupshelpers==1.0
+cwltool==3.1.20220224085855
+cycler==0.11.0
+dbus-python==1.2.18
+decorator==4.4.2
+defer==1.0.6
+distlib==0.3.4
+distro==1.7.0
+dnspython==2.1.0
+entrypoints==0.4
+eyeD3==0.8.10
+fasteners @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/fasteners-0.19-py3-none-any.whl#sha256=758819cb5d94cdedf4e836988b74de396ceacb8e2794d21f82d131fd9ee77237
+filelock @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/filelock-3.13.1-py3-none-any.whl#sha256=57dbda9b35157b05fb3e58ee91448612eb674172fab98ee235ccb0b5bee19a1c
+fonttools==4.29.1
+fs==2.4.12
+fsspec @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/fsspec-2023.12.2-py3-none-any.whl#sha256=d800d87f72189a745fa3d6b033b9dc4a34ad069f60ca60b943a63599f5501960
+gast==0.5.2
+grpcio==1.30.2
+h5py @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/h5py-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=f42e6c30698b520f0295d70157c4e202a9e402406f50dc08f5a7bc416b24e52d
+html5lib==1.1
+httplib2==0.20.2
+humanfriendly==10.0
+idna==3.3
+ifaddr==0.1.7
+IMDbPY==2021.4.18
+importlib-metadata==4.6.4
+iniconfig==1.1.1
+iniparse==0.4
+ipython==7.31.1
+ipython_genutils==0.2.0
+isodate==0.6.1
+jedi==0.18.0
+jeepney==0.7.1
+Jinja2 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/Jinja2-3.1.2-py3-none-any.whl#sha256=6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61
+joblib==0.17.0
+keyring==23.5.0
+kiwisolver==1.3.2
+launchpadlib==1.10.16
+lazr.restfulclient==0.14.4
+lazr.uri==1.0.6
+lockfile==0.12.2
+louis==3.20.0
+lxml==4.8.0
+lz4 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/lz4-4.3.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=f1d18718f9d78182c6b60f568c9a9cec8a7204d7cb6fad4e511a2ef279e4cb05
+macaroonbakery==1.3.1
+Mako==1.1.3
+Markdown==3.3.6
+MarkupSafe @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/MarkupSafe-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=65c1a9bcdadc6c28eecee2c119465aebff8f7a584dd719facdd9e825ec61ab52
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mistune==0.8.4
+more-itertools==8.10.0
+mpmath @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/mpmath-1.3.0-py3-none-any.whl#sha256=a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c
+msgpack==1.0.3
+mutagen==1.45.1
+mypy-extensions==0.4.3
+nemo-emblems==6.0.1
+netaddr==0.8.0
+netifaces==0.11.0
+networkx @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/networkx-3.2.1-py3-none-any.whl#sha256=f18c69adc97877c42332c170849c96cefa91881c99a7cb3e95b7c659ebdc1ec2
+numpy @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=bdd2b45bf079d9ad90377048e2747a0c82351989a2165821f0c96831b4a2a54b
+nvidia-cublas-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl#sha256=ee53ccca76a6fc08fb9701aa95b6ceb242cdaab118c3bb152af4e579af792728
+nvidia-cuda-cupti-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl#sha256=e54fde3983165c624cb79254ae9818a456eb6e87a7fd4d56a2352c24ee542d7e
+nvidia-cuda-nvrtc-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl#sha256=339b385f50c309763ca65456ec75e17bbefcbbf2893f462cb8b90584cd27a1c2
+nvidia-cuda-runtime-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl#sha256=6e258468ddf5796e25f1dc591a31029fa317d97a0a94ed93468fc86301d61e40
+nvidia-cudnn-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cudnn_cu12-8.9.2.26-py3-none-manylinux1_x86_64.whl#sha256=5ccb288774fdfb07a7e7025ffec286971c06d8d7b4fb162525334616d7629ff9
+nvidia-cufft-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl#sha256=794e3948a1aa71fd817c3775866943936774d1c14e7628c74f6f7417224cdf56
+nvidia-curand-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl#sha256=9d264c5036dde4e64f1de8c50ae753237c12e0b1348738169cd0f8a536c0e1e0
+nvidia-cusolver-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl#sha256=8a7ec542f0412294b15072fa7dab71d31334014a69f953004ea7a118206fe0dd
+nvidia-cusparse-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl#sha256=f3b50f42cf363f86ab21f720998517a659a48131e8d538dc02f8768237bd884c
+nvidia-nccl-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_nccl_cu12-2.18.1-py3-none-manylinux1_x86_64.whl#sha256=1a6c4acefcbebfa6de320f412bf7866de856e786e0462326ba1bac40de0b5e71
+nvidia-nvjitlink-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_nvjitlink_cu12-12.3.101-py3-none-manylinux1_x86_64.whl#sha256=64335a8088e2b9d196ae8665430bc6a2b7e6ef2eb877a9c735c804bd4ff6467c
+nvidia-nvtx-cu12 @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl#sha256=dc21cf308ca5691e7c04d962e213f8a4aa9bbfa23d95412f452254c2caeb09e5
+oauthlib==3.2.0
+onboard==1.4.1
+packaging==21.3
+PAM==0.4.2
+parso==0.8.1
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.1
+pluggy==0.13.0
+ply==3.11
+prompt-toolkit==3.0.28
+protobuf==3.12.4
+prov==2.0.0
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.10.0
+pycairo==1.20.1
+pycryptodomex==3.11.0
+pycups==2.0.1
+pycurl==7.44.1
+pydot==1.4.2
+pyelftools==0.27
+Pygments==2.11.2
+PyGObject==3.42.1
+PyICU==2.8.1
+pyinotify==0.9.6
+PyJWT==2.3.0
+pymacaroons==0.13.0
+pymagnitude==0.1.143
+PyNaCl==1.5.0
+pyparsing==2.4.7
+pyparted==3.11.7
+pyRFC3339==1.1
+pytest==6.2.5
+python-apt==2.4.0+ubuntu2
+python-dateutil==2.8.1
+python-debian==0.1.43+ubuntu1.1
+python-gnupg==0.4.8
+python-magic==0.4.24
+python-xlib==0.29
+pythran==0.10.0
+pytz==2022.1
+pyxattr==0.7.2
+pyxdg==0.27
+PyYAML==5.4.1
+qrcode==7.3.1
+rdflib==6.1.1
+rdflib-jsonld==0.6.1
+reportlab==3.6.8
+requests==2.25.1
+requests-file==1.5.1
+requests-toolbelt==0.9.1
+requests-unixsocket==0.2.0
+ruamel.yaml==0.17.16
+ruamel.yaml.clib==0.2.6
+schema-salad==8.2.20220103095339
+scipy==1.8.0
+scour==0.38.2
+screen-resolution-extra==0.0.0
+SecretStorage==3.3.1
+setproctitle==1.2.2
+shellescape==3.4.1
+simplejson==3.17.6
+six==1.16.0
+soupsieve==2.3.1
+SPARQLWrapper==1.8.5
+sympy @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/sympy-1.12-py3-none-any.whl#sha256=c3588cd4295d0c0f603d0f2ae780587e64e2efeedb3521e46b9bb1d08d184fa5
+systemd-python==234
+tinycss2==1.1.1
+tldextract==3.1.2
+toml==0.10.2
+tomli==1.2.2
+torch @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/torch-2.1.2-cp310-cp310-manylinux1_x86_64.whl#sha256=3a871edd6c02dae77ad810335c0833391c1a4ce49af21ea8cf0f6a5d2096eea8
+traitlets==5.1.1
+triton @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/triton-2.1.0-0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=66439923a30d5d48399b08a9eae10370f6c261a5ec864a64983bae63152d39d7
+typing_extensions @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/typing_extensions-4.9.0-py3-none-any.whl#sha256=af72aea155e91adfc61c3ae9e0e342dbc0cba726d6cba4b6c72c1f34e47291cd
+ubuntu-drivers-common==0.0.0
+ufoLib2==0.13.1
+ufw==0.36.1
+unicodedata2==14.0.0
+Unidecode==1.3.3
+urllib3==1.26.5
+vboxapi==1.0
+wadllib==1.3.6
+wcwidth==0.2.5
+webencodings==0.5.1
+websockets==9.1
+xdg==5
+xkit==0.0.0
+xlrd==1.2.0
+xxhash @ file:///tmp/pip-install-9lwkw430/pymagnitude_6f2003bdac5748d997e7e63a1e7b79ce/pymagnitude/req_wheels/xxhash-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=00f2fdef6b41c9db3d2fc0e7f94cb3db86693e5c45d6de09625caad9a469635b
+yt-dlp==2022.4.8
+zipp==1.0.0
