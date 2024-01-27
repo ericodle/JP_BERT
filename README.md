@@ -76,45 +76,7 @@ The pre-trained BERT model used for this project employs the MeCab text segmente
   echo yes | mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -a
   ```
 
-If everything went well, we should be able to perform the following test.
-
-  ```python
-  import MeCab
-  m=MeCab.Tagger("-Ochasen")
-  text = "私は機械学習が好きです。"
-  text_segmented = m.parse(text)
-  print(text_segmented)
-  ```
-MeCab will then do its job and segment the text we provided. Additionally, MeCab identifies each segment into its katakana pronounciation and grammatical class. Handy!
-         
-<pre>
-私        ワタシ      私        名詞-代名詞-一般  
-は        ハ         は        助詞-係助詞                         
-機械      キカイ      機械      名詞-一般                       
-学習      ガクシュウ   学習      名詞-サ変接続                 
-が        ガ         が        助詞-格助詞-一般                    
-好き      スキ        好き      名詞-形容動詞語幹                
-です      デス        です      助動詞  
-。         。         。       記号-句点                           
-</pre>
-
-You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
-
-### generate_ppx.py
-
-> This is the main project script. Open the .py file for helpful tips and enlightening comments. More importantly, our proposed perplexity model is coded as a FOR loop in this script.
-
-```sh
-# This will generate a ppx value for each N3 adverb question response. 
-# The questions are taken from N3_adverbs.csv under the "text" column.
-
-./generate_ppx.py
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-## Content
+## src scripts
 
 - [ ] generate_ppx.py
 
