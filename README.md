@@ -61,7 +61,7 @@ JP_BERT correctly answered 72 of 100 multiple-choice adverb questions (72%) corr
 
 Histograms showing the roughly normal distributions of input question lengths, generated perplexity (PPX) scores, and the derived measures 2-1DIFF and IQPR. All distributions were roughly normal, and non-representative outliers were omitted from the X-axis range.
 
-## MeCab and IPADIC setup
+## MeCab and IPADIC
 
 The pre-trained BERT model used for this project employs the MeCab text segmenter for Japanese. Along with MeCab comes the IPADic tokenization dictionary, which must also be installed. The following code got everything working in our environment, but be prepared to do the incompatible dependency/missing package dance a bit before everything works.
 
@@ -76,21 +76,21 @@ The pre-trained BERT model used for this project employs the MeCab text segmente
   echo yes | mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -a
   ```
 
-## src scripts
+## Content
 
-- [ ] generate_ppx.py
+- [ ] src/generate_ppx.py
 
 This is the main script of the entire JP_BERT project. Here, we have coded our proposed perplexity algorithm as a simple FOR loop with accompanying comments in the .py file. For further reference, please check out our soon-to-be-published paper on the topic.
 
-- [ ] ppx_descriptive_stats.csv
+- [ ] test/ppx_descriptive_stats.csv
 
 This CSV file contains the same first two columns as "ppx_output.csv" plus additional post-run calculations. Column C is labeled "correct" and contains a binary coding scheme (1=correct, nothing=incorrect) for JP_BERT's accuracy on the N3 test set. The correct answer for each question was placed at the top of every 4-response list. Therefore, if the minimum perplexity value for a given quartet occurs on the first response, a "1" is asigned. Otherwise, JPBERT answered the question incorrectly and a value of zero (space left blank) is assigned. Column D is labeled text_length and contains character counts for each corresponding input string in Column A. Column E is labeled "IQPR", which stands for "inter-question perplexity range." These values represent the difference between the maximum and minimum perplexity values for each quartet. Column F is labeled "2-1DIFF", which stands for "the difference between JPBERT's second and first answers to the question". Columns G-H, I-J, K-L, and M-N contain descriptive statistics for perplexity scores, text lengths, IQPR values, and 2-1DIFF values, respectively.
 
-- [ ] N3_adverbs.csv
+- [ ] test/N3_adverbs.csv
 
 This CSV file contains two data columns. The first column is titled "text" and consists of 100 transcribed N3 Japanese adverb questions from a comercially available JLPT test prep book. Each of the 4 possible answers for each question are written out such that JP_BERT can evaluate sentence perplexities in their entirety. Each 4-sentence question set is separated by a blank row, producing a list 500 rows in length. The second column is titled "perplexity" and contains perplexity values corresponding to adjacent text inputs.
 
-- [ ] BERT_primer.py
+- [ ] src/BERT_primer.py
 
 We have provided a beginner's guide for using BERT in Japanese (or any language). Feel free to open up this .py file in your favorite IDE or text editor and read all the helpful comments. You can copy-paste the code one block at a time in a command line interface, or even run it in a Colab/Jupyter Notebook. No GPU required! We hope this primer serves as an easy-to-understand overview of how BERT does math of words.
 
