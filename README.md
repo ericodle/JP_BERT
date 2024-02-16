@@ -22,7 +22,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-  <img src="https://github.com/ericodle/JP_BERT/tree/main/img/JPBERT_workflow.jpg" alt="Logo" width="400" height="700">
+  <img src="https://github.com/ericodle/JP_BERT/blob/main/img/JPBERT_workflow.jpg" alt="Logo" width="400" height="700">
   </a>
 <h3 align="center">JP_BERT</h3>
 </div>
